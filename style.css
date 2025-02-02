@@ -3,3 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  margin: 2% auto;
+  width: 50%;
+}
+
+.menu-list,
+.credentials-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+
+  list-style: none;
+}
+
+.footer-section__logo {
+  width: 7rem;
+}
