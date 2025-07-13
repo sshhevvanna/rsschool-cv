@@ -4,12 +4,58 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-color: #ff69b4;
+  --secondary-color: #ffcfe7;
+  --dark: #333;
+}
+
 body {
   display: flex;
   flex-direction: column;
 
   margin: 2% auto;
   width: 50%;
+}
+
+header, main, footer {
+  padding: 2rem;
+
+  background-color: var(--secondary-color);
+}
+
+h1, h2 {
+  color: var(--main-color);
+  font-style: italic;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+section {
+  margin: 2rem 0;
+}
+
+a {
+  color: var(--dark);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.about-me__photo {
+  width: 10%;
+  height: auto;
+
+  margin: 0 0 2rem 0;
 }
 
 .menu-list,
@@ -24,4 +70,12 @@ body {
 
 .footer-section__logo {
   width: 7rem;
+}
+
+.footer-section__year{
+  padding: 1rem;
+}
+
+#about-me, #contacts, #languages, #education, #skills, #code-snippet, #pet-project {
+  font-size: 1.15rem;
 }
